@@ -1,0 +1,64 @@
+drop table member;
+
+create table member(
+
+id 	varchar(20) not null,
+pwd  varchar(20) not null,
+name varchar(20) default null,
+email varchar(20) default null,
+
+primary key (id)
+
+);
+
+select * from member;
+
+DROP TABLE bbs;
+DROP SEQUENCE bbs_seq;
+
+
+
+CREATE SEQUENCE bbs_seq
+INCREMENT BY 1
+START WITH 1
+MINVALUE 1
+MAXVALUE 10000
+NOCYCLE;
+
+CREATE TABLE bbs(
+	num NUMBER(10,0) not null,
+	title VARCHAR(200),
+	content VARCHAR(1000),
+	write VARCHAR(100),
+	regdate DATE DEFAULT SYSDATE,
+	hit number(10,0),
+	category varchar(100),
+
+	PRIMARY KEY(num)
+);
+
+select * from game;
+
+select * from bbs;
+select * from bbs_seq;
+
+
+drop table game;
+  
+
+CREATE TABLE "SCOTT"."GAME" 
+   (	"GAME" VARCHAR2(128 BYTE) NOT NULL ENABLE, 
+	"KEYWORD" VARCHAR2(200 BYTE), 
+	"LOCATIONDATA" VARCHAR2(50 BYTE), 
+	"STARTDAY" VARCHAR2(50 BYTE), 
+	"ENDDAY" VARCHAR2(50 BYTE), 
+	"HOMEPAGE" VARCHAR2(128 BYTE), 
+	"MEMO" VARCHAR2(3000 BYTE), 
+	"TEMP" VARCHAR2(50 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+  

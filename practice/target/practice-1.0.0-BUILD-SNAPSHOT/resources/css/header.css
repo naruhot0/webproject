@@ -1,0 +1,227 @@
+@charset "UTF-8";
+body{
+
+    width: 100%;
+    margin:0;
+}
+
+
+.bubbly{
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+ul,li,a,h1,h2{
+
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    color:black;
+    padding: 0;
+
+}
+
+img{
+    max-width: 100%; 
+    min-width: 100%; 
+   /* margin: 0 auto; */
+   /* width: 200px;
+   height: 230px; */
+
+}
+
+
+header,section,footer{
+
+display: block;
+position: relative;
+
+}
+
+.wrap{
+
+    min-width: 1200px;
+    /* background-color: #fff; */
+    margin: 0 auto;
+}
+
+header{
+    height: 150px;
+    background-color: #fff;
+    border-bottom: solid 2px black;
+
+}
+.wrapper{
+
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.menu{
+    height: 150px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 150px;
+}
+
+.logo{
+    width: 25%;
+    background: url(../img/head_logo.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    top: 20px;
+
+}
+
+.logo h1{
+        visibility: hidden;
+}
+
+.mainNav{
+
+    width: 50%;
+
+}
+
+.mainNav ul{
+    display: flex;
+    font-size: 25px;
+
+}
+
+.mainNav ul li :hover{
+
+    background-color: #9DE4FF;
+    border-radius: 10px;
+
+
+}
+
+
+.mainNav ul li  {
+
+    margin-right: 100px;
+    margin: auto;
+
+}
+
+.loginMenu{
+
+    width: 25%;
+
+}
+
+
+.loginMenu ul{
+    display: flex;
+}
+
+.loginMenu ul li {
+
+    margin-right: 20px;
+
+}
+#registernav{
+
+    /* display: none; */
+
+}
+
+#loginnav{
+
+    /* display: none; */
+
+}
+
+#logoutnav{
+
+    display: none;
+
+}
+
+#mypagenav{
+
+    /* display: none; */
+
+}
+
+section{
+
+    min-height: 1000px;
+    /* background-color: #9DE4FF; */
+    background: url(../img/ilust_01.png) no-repeat top
+    ,url(../img/ilust_02.png) no-repeat bottom;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+
+.rankShell ul{
+
+    display: flex;
+    height: 1000px;
+    
+
+}
+
+.rankShell ul li {
+
+    margin: 0 auto;
+}
+/* index 이미지 삽입 부분 */
+.firstRank{
+
+    width: 50%;
+    background: url(/img/main/seoulopenmaraton.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    
+}
+.secondRank{
+
+    width: 25%;
+    background: url(/img/main/마라톤1.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.thirdRank{
+
+    width: 25%;
+    background: url(/img/main/마라톤2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+footer{
+    min-height: 140px;
+    background-color: #fff;
+    border-top: black solid 2px;
+
+}
+.contact{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.contact ul{
+
+    display: flex;
+    text-align: center;
+}
+
+.contact ul li{
+
+    margin: 0 auto;
+
+}
+

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+    /* Full width input fields */
+    
+    #name,#id,#password,#email{
+    font-family: Arial, Helvetica, sans-serif;
+    border:2px solid;
+    border-radius: 15px 15px;
+    width: 30%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+    }
+
+    /* Set a style for all buttons */
+   #submit, #reset{
+        border:2px solid;
+        border-radius: 15px 15px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 6px 16px;
+        margin: 4px 3px;
+        border: none;
+        cursor: pointer;
+        width: 15%;
+    }
+	
+	.innerform{
+	width: 800px;
+	margin: 0 auto;
+	
+	}
+	.registerbox{
+	width: 800px;
+	margin: 0 auto;
+    font-family: "Helvetica Neue",Helvetica,"Malgun gothic",Arial;
+	}
+

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* 내페이지 메인 */
+.main-inner{
+
+    /* background-color: rosybrown; */
+    /* width: 1500px; */
+    /* margin: 0 auto; */
+}
+
+.search-filter{
+    width: 85%;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: 15px;
+    /* color:floralwhite; */
+    text-align: center;
+    /* display: none; */
+}
+
+
+
+.search-filter-inner div > p {
+
+    font-weight: bold;
+    background-color: rgb(233, 233, 233);
+    color: black;
+    border-radius: 5px;
+    margin-top: 0;
+
+}
+
+.search-filter-inner div{
+
+    /* margin-top: 5px ; */
+
+}
+
+.search-filter-inner{
+
+    margin: 0 auto;
+    /* margin-top: 10px; */
+}
+.search-filter p{
+
+    text-align: center;
+
+}
+.submit-button input{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: rgb(128, 136, 132);
+    border-radius: 12%;
+}
+
+.event-container div >ul{
+
+    display: flex;
+
+
+}
+.event-container div >ul li img{
+
+    width: 200px;
+    height: 250px;
+    background-color: slategrey;
+    text-align: center;
+
+
+}
+.event-container > div div h1{
+
+    color: black;
+
+}
+
+.space1{
+
+    background-color: #fff;
+    width: 85%;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 5px;
+    text-overflow:clip;
+}
+
+.space1 ul{
+
+    margin: 0 auto;
+
+}
+
+.content{
+	
+	width: 20%;
+	margin: 3px;
+	
+}
+
+.content h4{
+	
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	
+	
+}
+
+
+
+.space2{
+
+    background-color: #fff;
+    width: 85%;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.space3{
+
+    background-color: #fff;
+    width: 85%;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+
+.pageNum{
+    /* background-color: rgb(93, 189, 135); */
+    width: 340px;
+    height: 30px;
+    margin: 0 auto;
+}
+.pageNumInner {
+
+    margin-top: 5px;
+
+}
+
+.pageNumInner ul a {
+
+    color:black;
+
+}
+
+
+.pageNum ul{
+
+    display: flex;
+    margin: 0 auto;
+    left: 15px;
+}
+
+.pageNum ul li{
+
+    margin: 0 auto;
+
+}

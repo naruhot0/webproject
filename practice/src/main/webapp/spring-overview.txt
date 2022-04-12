@@ -1,0 +1,57 @@
+[스프링 개요]
+
+-Spring (봄): 웹 개발하기 위한 프레임워크
+(이미 프레임이 짜여있기 때문에 (.xml))
+- 이미 프레임이 짜여있음
+-웹이 시작되기 전에 얽히는 설정 파일들이 존재
+- web.xml > root-context.xml > servlet-context.xml > applicationContext.xml
+													  ( @Configuration
+													  	AppConfig.class)
+													  	
+													  	
+-MVC(Model, View, Controller)패턴 채택
+-CLient(Presentation Layer , View) -- Controller -- Service -- Dao -- Database
+									  (	  Business Layer   )  (Persistence Layer)
+			View							Controller			   Model					  	
+====================================================================================
+-int a = 3; <- 휘발성 (RAM)
+-a.txt => a: 3	<- 비휘발성 (SSD/HDD) (Persistence 실행 중인 프로그램이 죽어도 영원함)								  	
+====================================================================================									  	
+-Model : Persistence Layer ()
+
+
+controller, service, dao, java bean (entity,dto,vo)만 개발
+	-DATABASE : id, pwd(암호화),name, birthday (Date, yyyy-MM-dd)
+	-ENTITY : id, pwd(암호화), name, birthday (String, yyyy-MM-dd)
+		-persistence layer
+		-database column과 1:1 맵핑
+	-DTO : id, pwd(복구화), name, year (int,yyyy), month(int, MM) day(int, dd)
+		-business layer에서 필요한 데이터를 저장
+		-birthday를 year,month,day 나눠서 저장 => 나중에 d-day 같은 수학연산 처리하기 좋으라고
+	-VO : id,name,year(int,yyyy) month(int,MM) day(int,dd)
+		-view layer
+		-view page와 1:1 맵핑
+	
+	=> ENTITY/DTO/VO 를 bean으로 통합할 수도 있음.
+	- 만든 이유 : 프로젝트의 유지보수, 품질 보장
+	- 이전에는 웹 개발을 위해서 JavaEE
+	
+	-특징
+	1) POJO (Plain Old java Object) 기반
+		- 스프링에서 객체 구현할 때 별도의 API 사용하지 않고 일반 자바 코드로 구현 
+		- 특정 프레임워크에 종속된 무거운 객체를 만듦에 반발하기 위해 사용한 언어
+		- 마틴 파울러
+		
+	2) IoC (Inversion of Control, 제어의 역전) [개발자 입장]
+		- 객체 생성/소멸은 개발자에게 제어권이 없고
+		  IoC 컨테이너 (ApplicationContext)에게 제어권이 있음	
+		  IoC 컨테이너는 객체를 싱글톤 패턴 (객체를 오직 하나)으로 만들어서 사용 
+		  
+	3) DI (Dependency Injection 의존 주입) [스프링컨테이너 입장] 
+		- 스프링 컨테이너 입장에서는 해당 프로그램에서 필요한 객체가 있을때 주입
+		
+		
+			  
+		
+		
+		  
